@@ -49,6 +49,30 @@ adk deploy agent_engine agent/ --project=YOUR_PROJECT_ID --region=YOUR_REGION
 
 Note: Ensure you have your Google Cloud project set up and you are authenticated (`gcloud auth login`).
 
+### 4. Publish to Gemini Enterprise
+
+To publish your agent to Gemini Enterprise, follow these steps:
+
+1.  **Deploy First**: Ensure you have successfully followed the **Deploy to Agent Engine** steps above.
+2.  **Get the Resource Name**:
+    *   In the Google Cloud Console, search for **Agent Engine** and go to that page.
+    *   Make sure you have selected the **region** that you deployed your agent to.
+    *   Copy the **Resource Name** of your deployed agent to your clipboard.
+3.  **Configure Gemini Enterprise**:
+    *   Go to **Gemini Enterprise**. You will see a list of apps; one has already been set up for you—feel free to use it.
+    *   Click on the app, and then on the left-hand menu, click the **Agents** button.
+    *   Inside this area, click **Add agent** (or you can update the URL of an existing agent by clicking on that if you wish too).
+    *   Select **Custom agent via Agent Engine** and click **Add**.
+4.  **Finalize Setup**:
+    *   Skip through any agent authorizations.
+    *   Enter your **Agent's Name** and a **Description**.
+    *   Paste the path you copied from Agent Engine into the **Agent Engine Reasoning Engine** section.
+    *   Click **Create**.
+5.  **Test Your Agent**:
+    *   Once back in the Gemini Enterprise overview, you should see a button **Access the URL**.
+    *   Navigate to that URL, and on the left, you will see an **Agents** section.
+    *   Click on it, and your deployed custom agent will be available under the name you gave it!
+
 ## 🧠 Learning & Development
 
 This repository includes **ADK Skills** (located in `.agents/skills/`) which provide interactive documentation and code patterns for your AI coding assistant. You can ask your assistant (like Antigravity or Cursor) to refer to these files:
