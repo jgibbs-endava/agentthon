@@ -21,10 +21,13 @@ Welcome to the simplified ADK Hackathon Demo! This repository contains a clean, 
 ### 2. Environment Setup
 Create a `.env` file in the root or `demo-agent` directory with your Google Cloud project details:
 ```bash
-GOOGLE_CLOUD_PROJECT=p-dev-gcp-syd-agentthon-s2gw-3
+GOOGLE_CLOUD_PROJECT=YOUR PROJECT ID
 GOOGLE_CLOUD_LOCATION=us-central1
 GOOGLE_GENAI_USE_VERTEXAI=1
 ```
+
+If you cannot find your .env file to update, you may need to click view -> toggle hidden files.
+Once updated you can toggle to hide the folders again.
 
 ### 3. Setup & Local Testing
 Navigate to the `demo-agent` directory, install dependencies, and run the local playground:
